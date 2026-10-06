@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>D.E.N.S.O Cortex Agent</title>
+
+    <link rel="stylesheet" href="page2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="topbar">
+
+    <div class="brand">
+
+        <div class="denso-logo">
+            DENSO
+        </div>
+
+        <div class="brand-divider"></div>
+
+        <div class="brand-copy">
+            <h1>D.E.N.S.O Cortex Agent</h1>
+
+            <p>
+                AI hỗ trợ phân tích tài liệu & tra cứu tri thức kỹ thuật
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="top-actions">
+
+        <div class="system-status">
+            <span></span>
+            Hệ thống sẵn sàng
+        </div>
+
+        <button class="dashboard-button" id="dashboardBtn">
+            ← &nbsp; Quay lại Dashboard
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="workspace">
+
+
+    <!-- ================================================= -->
+    <!-- LEFT : ANALYSIS -->
+    <!-- ================================================= -->
+
+    <section class="analysis-panel">
+
+
+        <!-- TITLE -->
+
+        <div class="section-title">
+
+            <div class="title-icon">
+                ▤
+            </div>
+
+            <h2>
+                Kết quả phân tích tài liệu
+            </h2>
+
+        </div>
+
+
+
+        <!-- FILE -->
+
+        <div class="file-card">
+
+            <div class="pdf-icon">
+                <span>PDF</span>
+            </div>
+
+            <div class="file-info">
+
+                <strong>
+                    Technical_Instruction_Denso.pdf
+                </strong>
+
+                <p>
+                    PDF
+                    <span>•</span>
+                    2.4 MB
+                    <span>•</span>
+                    15/10/2025 14:32
+                </p>
+
+            </div>
+
+            <div class="done-badge">
+                ✓ &nbsp; Đã phân tích xong
+            </div>
+
+        </div>
+
+
+
+        <!-- TABS -->
+
+        <div class="tabs">
+
+            <button
+                class="tab active"
+                data-tab="overview"
+            >
+                ▤ &nbsp; Tổng quan
+            </button>
+
+
+            <button
+                class="tab"
+                data-tab="graph"
+            >
+                ♧ &nbsp; Knowledge Graph
+            </button>
+
+
+            <button
+                class="tab"
+                data-tab="sources"
+            >
+                ☷ &nbsp; Nguồn tài liệu
+            </button>
+
+        </div>
+
+
+
+        <!-- ================================================= -->
+        <!-- TAB : OVERVIEW -->
+        <!-- ================================================= -->
+
+        <div
+            class="tab-content active"
+            id="overview"
+        >
+
+
+            <!-- THÔNG TIN -->
+
+            <div class="info-card">
+
+                <div class="card-title">
+
+                    <span>▣</span>
+
+                    <h3>
+                        Thông tin tài liệu
+                    </h3>
+
+                </div>
+
+
+                <div class="metadata">
+
+                    <div>
+                        <span>Tên tài liệu</span>
+                        <strong>
+                            Technical_Instruction_Denso.pdf
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>Loại tài liệu</span>
+                        <strong>
+                            Hướng dẫn kỹ thuật
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>Lĩnh vực</span>
+                        <strong>
+                            Hệ thống điện tử ô tô
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>Ngày cập nhật</span>
+                        <strong>
+                            15/10/2025
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- NỘI DUNG CỐT LÕI -->
+
+            <div class="info-card">
+
+                <div class="card-title">
+
+                    <span>♧</span>
+
+                    <h3>
+                        Nội dung cốt lõi
+                    </h3>
+
+                </div>
+
+
+                <ul class="core-list">
+
+                    <li>
+                        Mô tả quy trình lắp đặt và kiểm tra cảm biến áp suất
+                        (Pressure Sensor).
+                    </li>
+
+                    <li>
+                        Các bước hiệu chuẩn thiết bị đo theo tiêu chuẩn DENSO.
+                    </li>
+
+                    <li>
+                        Lưu ý về điều kiện môi trường và an toàn khi vận hành.
+                    </li>
+
+                    <li>
+                        Thông số kỹ thuật chi tiết và sơ đồ kết nối.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- BOTTOM -->
+
+            <div class="bottom-grid">
+
+
+                <!-- KNOWLEDGE GRAPH -->
+
+                <div class="info-card">
+
+                    <div class="card-title graph-title">
+
+                        <div>
+                            <span>♧</span>
+
+                            <h3>
+                                Knowledge Graph
+                            </h3>
+                        </div>
+
+                        <button
+                            class="mini-button"
+                            data-switch="graph"
+                        >
+                            Xem chi tiết →
+                        </button>
+
+                    </div>
+
+
+                    <div class="knowledge-graph">
+
+                        <svg
+                            class="graph-lines"
+                            viewBox="0 0 330 230"
+                        >
+
+                            <line
+                                x1="165"
+                                y1="115"
+                                x2="165"
+                                y2="37"
+                            />
+
+                            <line
+                                x1="165"
+                                y1="115"
+                                x2="61"
+                                y2="83"
+                            />
+
+                            <line
+                                x1="165"
+                                y1="115"
+                                x2="268"
+                                y2="83"
+                            />
+
+                            <line
+                                x1="165"
+                                y1="115"
+                                x2="83"
+                                y2="185"
+                            />
+
+                            <line
+                                x1="165"
+                                y1="115"
+                                x2="251"
+                                y2="185"
+                            />
+
+                        </svg>
+
+
+                        <div class="node node-main">
+                            Pressure<br>
+                            Sensor
+                        </div>
+
+
+                        <div class="node node-install">
+                            Installation
+                        </div>
+
+
+                        <div class="node node-safety">
+                            Safety
+                        </div>
+
+
+                        <div class="node node-calibration">
+                            Calibration
+                        </div>
+
+
+                        <div class="node node-spec">
+                            Technical<br>
+                            Spec
+                        </div>
+
+
+                        <div class="node node-wiring">
+                            Wiring<br>
+                            Diagram
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SOURCE -->
+
+                <div class="info-card">
+
+                    <div class="card-title">
+
+                        <span>▤</span>
+
+                        <h3>
+                            Vị trí nguồn trong tài liệu
+                        </h3>
+
+                    </div>
+
+
+                    <div class="source-list">
+
+
+                        <button
+                            class="source-item"
+                            data-source="5.2 Installation Procedure"
+                            data-page="12"
+                        >
+
+                            <div class="source-icon">
+                                ▤
+                            </div>
+
+                            <div class="source-text">
+
+                                <strong>
+                                    1. 5.2 Installation Procedure
+                                </strong>
+
+                                <small>
+                                    Hướng dẫn lắp đặt cảm biến áp suất
+                                </small>
+
+                            </div>
+
+                            <span class="page">
+                                Trang 12
+                            </span>
+
+                            <b>
+                                ›
+                            </b>
+
+                        </button>
+
+
+
+                        <button
+                            class="source-item"
+                            data-source="6.1 Calibration Method"
+                            data-page="18"
+                        >
+
+                            <div class="source-icon">
+                                ▤
+                            </div>
+
+                            <div class="source-text">
+
+                                <strong>
+                                    2. 6.1 Calibration Method
+                                </strong>
+
+                                <small>
+                                    Phương pháp hiệu chuẩn thiết bị
+                                </small>
+
+                            </div>
+
+                            <span class="page">
+                                Trang 18
+                            </span>
+
+                            <b>
+                                ›
+                            </b>
+
+                        </button>
+
+
+
+                        <button
+                            class="source-item"
+                            data-source="8.3 Safety Precautions"
+                            data-page="24"
+                        >
+
+                            <div class="source-icon">
+                                ▤
+                            </div>
+
+                            <div class="source-text">
+
+                                <strong>
+                                    3. 8.3 Safety Precautions
+                                </strong>
+
+                                <small>
+                                    Lưu ý an toàn khi vận hành
+                                </small>
+
+                            </div>
+
+                            <span class="page">
+                                Trang 24
+                            </span>
+
+                            <b>
+                                ›
+                            </b>
+
+                        </button>
+
+
+
+                        <button
+                            class="source-item"
+                            data-source="Appendix A – Specification"
+                            data-page="32"
+                        >
+
+                            <div class="source-icon">
+                                ▤
+                            </div>
+
+                            <div class="source-text">
+
+                                <strong>
+                                    4. Appendix A – Specification
+                                </strong>
+
+                                <small>
+                                    Thông số kỹ thuật chi tiết
+                                </small>
+
+                            </div>
+
+                            <span class="page">
+                                Trang 32
+                            </span>
+
+                            <b>
+                                ›
+                            </b>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================================================= -->
+        <!-- TAB : KNOWLEDGE GRAPH -->
+        <!-- ================================================= -->
+
+        <div
+            class="tab-content hidden"
+            id="graph"
+        >
+
+            <div class="info-card large-graph-card">
+
+                <div class="card-title">
+
+                    <span>♧</span>
+
+                    <h3>
+                        Knowledge Graph – Pressure Sensor
+                    </h3>
+
+                </div>
+
+                <p class="description">
+                    Mối quan hệ giữa thiết bị, quy trình lắp đặt,
+                    hiệu chuẩn, sơ đồ dây điện và yêu cầu an toàn.
+                </p>
+
+
+                <div class="knowledge-graph large-graph">
+
+                    <svg
+                        class="graph-lines"
+                        viewBox="0 0 500 300"
+                    >
+
+                        <line x1="250" y1="150" x2="250" y2="45"/>
+                        <line x1="250" y1="150" x2="90" y2="105"/>
+                        <line x1="250" y1="150" x2="410" y2="105"/>
+                        <line x1="250" y1="150" x2="125" y2="250"/>
+                        <line x1="250" y1="150" x2="375" y2="250"/>
+
+                    </svg>
+
+
+                    <div class="node node-main">
+                        Pressure<br>
+                        Sensor
+                    </div>
+
+                    <div class="node node-install">
+                        Installation
+                    </div>
+
+                    <div class="node node-safety">
+                        Safety
+                    </div>
+
+                    <div class="node node-calibration">
+                        Calibration
+                    </div>
+
+                    <div class="node node-spec">
+                        Technical<br>
+                        Spec
+                    </div>
+
+                    <div class="node node-wiring">
+                        Wiring<br>
+                        Diagram
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================================================= -->
+        <!-- TAB : SOURCES -->
+        <!-- ================================================= -->
+
+        <div
+            class="tab-content hidden"
+            id="sources"
+        >
+
+            <div class="info-card">
+
+                <div class="card-title">
+
+                    <span>▤</span>
+
+                    <h3>
+                        Danh sách nguồn tham chiếu
+                    </h3>
+
+                </div>
+
+                <p class="description">
+                    Các đoạn tài liệu được dùng để tạo câu trả lời
+                    và tóm tắt.
+                </p>
+
+
+                <div class="source-list">
+
+
+                    <button
+                        class="source-item"
+                        data-source="5.2 Installation Procedure"
+                        data-page="12"
+                    >
+
+                        <div class="source-icon">
+                            ▤
+                        </div>
+
+                        <div class="source-text">
+
+                            <strong>
+                                5.2 Installation Procedure
+                            </strong>
+
+                            <small>
+                                Chuẩn bị dụng cụ, vị trí lắp và mô-men siết
+                            </small>
+
+                        </div>
+
+                        <span class="page">
+                            Trang 12
+                        </span>
+
+                        <b>›</b>
+
+                    </button>
+
+
+
+                    <button
+                        class="source-item"
+                        data-source="6.1 Calibration Method"
+                        data-page="18"
+                    >
+
+                        <div class="source-icon">
+                            ▤
+                        </div>
+
+                        <div class="source-text">
+
+                            <strong>
+                                6.1 Calibration Method
+                            </strong>
+
+                            <small>
+                                Kiểm tra độ chính xác và hiệu chuẩn thiết bị
+                            </small>
+
+                        </div>
+
+                        <span class="page">
+                            Trang 18
+                        </span>
+
+                        <b>›</b>
+
+                    </button>
+
+
+
+                    <button
+                        class="source-item"
+                        data-source="8.3 Safety Precautions"
+                        data-page="24"
+                    >
+
+                        <div class="source-icon">
+                            ▤
+                        </div>
+
+                        <div class="source-text">
+
+                            <strong>
+                                8.3 Safety Precautions
+                            </strong>
+
+                            <small>
+                                Điều kiện an toàn trước khi vận hành
+                            </small>
+
+                        </div>
+
+                        <span class="page">
+                            Trang 24
+                        </span>
+
+                        <b>›</b>
+
+                    </button>
+
+
+
+                    <button
+                        class="source-item"
+                        data-source="Appendix A – Specification"
+                        data-page="32"
+                    >
+
+                        <div class="source-icon">
+                            ▤
+                        </div>
+
+                        <div class="source-text">
+
+                            <strong>
+                                Appendix A – Specification
+                            </strong>
+
+                            <small>
+                                Thông số kỹ thuật và giới hạn vận hành
+                            </small>
+
+                        </div>
+
+                        <span class="page">
+                            Trang 32
+                        </span>
+
+                        <b>›</b>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- RIGHT : AI CHATBOT -->
+    <!-- ================================================= -->
+
+    <section class="chat-panel">
+
+
+        <!-- CHAT HEADER -->
+
+        <div class="chat-header">
+
+            <div class="assistant-avatar">
+                ▣
+            </div>
+
+            <div>
+
+                <h2>
+                    DENSO AI Assistant
+                </h2>
+
+                <p>
+                    Trả lời câu hỏi dựa trên tài liệu kỹ thuật của DENSO
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CHAT -->
+
+        <div
+            class="chat-scroll"
+            id="chatScroll"
+        >
+
+
+            <!-- USER -->
+
+            <div class="message user-message">
+
+                <div class="message-bubble">
+
+                    Hướng dẫn lắp đặt cảm biến áp suất
+                    gồm những bước nào?
+
+                    <time>
+                        14:35 ✓✓
+                    </time>
+
+                </div>
+
+                <div class="user-avatar">
+                    ♟
+                </div>
+
+            </div>
+
+
+
+            <!-- AI -->
+
+            <div class="message assistant-message">
+
+                <div class="assistant-message-avatar">
+                    ▣
+                </div>
+
+
+                <div class="answer-bubble">
+
+                    <p>
+                        Dựa trên tài liệu kỹ thuật,
+                        quy trình lắp đặt cảm biến áp suất
+                        (Pressure Sensor) bao gồm các bước sau:
+                    </p>
+
+
+
+                    <div class="step">
+
+                        <span>1</span>
+
+                        <div>
+
+                            <strong>
+                                Chuẩn bị dụng cụ và kiểm tra thiết bị
+                            </strong>
+
+                            <p>
+                                • Đảm bảo cảm biến và phụ kiện đầy đủ,
+                                không bị hư hỏng.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="step">
+
+                        <span>2</span>
+
+                        <div>
+
+                            <strong>
+                                Lắp cảm biến vào vị trí
+                            </strong>
+
+                            <p>
+                                • Đảm bảo đúng vị trí theo sơ đồ kỹ thuật.
+                            </p>
+
+                            <p>
+                                • Siết chặt theo mô-men xoắn quy định.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="step">
+
+                        <span>3</span>
+
+                        <div>
+
+                            <strong>
+                                Kết nối dây điện
+                            </strong>
+
+                            <p>
+                                • Đấu nối theo sơ đồ
+                                (xem trang 24).
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="step">
+
+                        <span>4</span>
+
+                        <div>
+
+                            <strong>
+                                Kiểm tra và hiệu chuẩn
+                            </strong>
+
+                            <p>
+                                • Thực hiện kiểm tra rò rỉ
+                                và hiệu chuẩn theo hướng dẫn
+                                tại mục 6.1 (trang 18).
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="reference-box">
+
+                        <div>
+                            ▤ &nbsp;
+
+                            Tham khảo:
+
+                            <a href="#">
+                                5.2 Installation Procedure
+                                (Trang 12)
+                            </a>
+
+                            &nbsp; | &nbsp;
+
+                            <a href="#">
+                                6.1 Calibration Method
+                                (Trang 18)
+                            </a>
+                        </div>
+
+                        <small>
+                            Nguồn:
+                            Technical_Instruction_Denso.pdf
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- GỢI Ý -->
+
+        <div class="suggestions">
+
+            <h3>
+                ✧ &nbsp; Câu hỏi gợi ý
+            </h3>
+
+
+            <div class="suggestion-list">
+
+                <button>
+                    Thông số kỹ thuật của cảm biến áp suất là gì?
+                </button>
+
+                <button>
+                    Sơ đồ kết nối dây điện ở đâu?
+                </button>
+
+                <button>
+                    Điều kiện môi trường khi lắp đặt?
+                </button>
+
+                <button>
+                    Hướng dẫn hiệu chuẩn thiết bị?
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- INPUT -->
+
+        <form
+            class="chat-composer"
+            id="chatForm"
+        >
+
+            <button
+                type="button"
+                class="attach-button"
+                id="attachBtn"
+            >
+                ♧
+            </button>
+
+
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Hỏi về tài liệu kỹ thuật, quy trình, thông số..."
+                autocomplete="off"
+            >
+
+
+            <button
+                class="send-button"
+                type="submit"
+            >
+                ➤
+            </button>
+
+        </form>
+
+
+        <input
+            type="file"
+            id="fileInput"
+            hidden
+            accept=".pdf,.doc,.docx,.png,.jpg,.jpeg"
+        >
+
+    </section>
+
+</main>
+
+
+
+<div
+    class="toast"
+    id="toast"
+></div>
+
+
+<script src="page2.js"></script>
+
+</body>
+</html>

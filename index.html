@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.E.N.S.O Cortex Agent - Khởi tạo phiên phân tích</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- File CSS riêng -->
+    <link rel="stylesheet" href="page1.css">
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-red-700 text-white px-6 py-3 flex items-center justify-between shadow-md">
+        <div class="flex items-center space-x-4">
+            <div>
+                <span class="font-black text-2xl tracking-wider block leading-none">DENSO</span>
+                <span class="text-[10px] tracking-widest text-red-200">Crafting the Core</span>
+            </div>
+            <div class="h-8 w-[1px] bg-red-500 mx-2"></div>
+            <div>
+                <h1 class="font-bold text-base tracking-wide">D.E.N.S.O Cortex Agent</h1>
+                <p class="text-xs text-red-100">AI hỗ trợ phân tích tài liệu & tra cứu tri thức kỹ thuật</p>
+            </div>
+        </div>
+        <div class="flex items-center space-x-6">
+            <span class="text-xs bg-emerald-600 text-white px-3.5 py-1.5 rounded-full font-medium flex items-center space-x-1.5 shadow-sm">
+                <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                <span>Hệ thống sẵn sàng</span>
+            </span>
+            <div class="flex items-center space-x-2 text-xs bg-red-800 px-3 py-1.5 rounded font-medium">
+                <i class="fa-solid fa-user-gear"></i>
+                <span>Nhân viên kỹ thuật</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-1 p-6 max-w-[1400px] w-full mx-auto flex flex-col space-y-6">
+        
+        <!-- Tiêu đề trang -->
+        <div class="flex items-center space-x-3 bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+            <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-file-lines"></i>
+            </div>
+            <div>
+                <h2 class="font-bold text-slate-800 text-base">Khởi tạo phiên phân tích</h2>
+                <p class="text-xs text-slate-500">Nhập yêu cầu hoặc tài liệu kỹ thuật để D.E.N.S.O Cortex Agent phân tích và xây dựng tri thức.</p>
+            </div>
+        </div>
+
+        <!-- Grid 2 Cột -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- Cột trái: Thông tin yêu cầu (7 cột) -->
+            <div class="lg:col-span-7 bg-white rounded-xl border border-slate-200 p-5 shadow-sm flex flex-col space-y-4">
+                <div class="flex items-center space-x-2 text-blue-600 font-bold text-sm border-b pb-3">
+                    <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs">1</span>
+                    <span>Thông tin yêu cầu</span>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5">Tiêu đề tài liệu / báo cáo *</label>
+                    <input type="text" id="documentTitle" placeholder="Ví dụ: Hướng dẫn lắp đặt cảm biến áp suất" class="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:outline-none focus:border-blue-600">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5">Mô tả yêu cầu / Nội dung phân tích *</label>
+                    <textarea id="requestContent" rows="4" placeholder="Ví dụ: Phân tích quy trình lắp đặt, các bước thực hiện, lưu ý an toàn, thông số kỹ thuật liên quan..." class="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:outline-none focus:border-blue-600"></textarea>
+                    <div class="text-right text-[10px] text-slate-400 mt-1"><span id="charCount">0</span>/1000</div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-2">Loại yêu cầu</label>
+                    <div class="grid grid-cols-2 gap-2">
+                        <button type="button" class="type-button active flex items-center space-x-2 p-2.5 border border-blue-600 bg-blue-50/50 rounded-lg cursor-pointer text-xs font-medium text-slate-700 text-left transition">
+                            <i class="fa-solid fa-file-invoice text-blue-600"></i>
+                            <span>Phân tích tài liệu</span>
+                        </button>
+                        <button type="button" class="type-button flex items-center space-x-2 p-2.5 border border-slate-200 rounded-lg cursor-pointer text-xs font-medium text-slate-700 hover:bg-slate-50 text-left transition">
+                            <i class="fa-solid fa-magnifying-glass text-slate-500"></i>
+                            <span>Tra cứu kỹ thuật</span>
+                        </button>
+                        <button type="button" class="type-button flex items-center space-x-2 p-2.5 border border-slate-200 rounded-lg cursor-pointer text-xs font-medium text-slate-700 hover:bg-slate-50 text-left transition">
+                            <i class="fa-solid fa-list-check text-slate-500"></i>
+                            <span>Tóm tắt quy trình</span>
+                        </button>
+                        <button type="button" class="type-button flex items-center space-x-2 p-2.5 border border-slate-200 rounded-lg cursor-pointer text-xs font-medium text-slate-700 hover:bg-slate-50 text-left transition">
+                            <i class="fa-solid fa-shield-halved text-slate-500"></i>
+                            <span>Kiểm tra thông tin</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cột phải: Tài liệu đầu vào (5 cột) -->
+            <div class="lg:col-span-5 bg-white rounded-xl border border-slate-200 p-5 shadow-sm flex flex-col space-y-4">
+                <div class="flex items-center space-x-2 text-blue-600 font-bold text-sm border-b pb-3">
+                    <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs">2</span>
+                    <span>Tài liệu đầu vào</span>
+                </div>
+
+                <div id="dropZone" class="border-2 border-dashed border-slate-300 rounded-xl p-6 text-center hover:border-blue-500 transition cursor-pointer bg-slate-50/50 relative group flex flex-col items-center justify-center flex-1">
+                    <input type="file" id="fileInput" class="absolute inset-0 opacity-0 cursor-pointer hidden">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mb-2">
+                        <i class="fa-solid fa-cloud-arrow-up text-lg"></i>
+                    </div>
+                    <p class="text-xs text-slate-700 font-medium">Kéo thả tài liệu vào đây hoặc <span id="chooseFileButton" class="text-blue-600 font-bold underline">Chọn tệp từ thiết bị</span></p>
+                    <p class="text-[10px] text-slate-400 mt-1">PDF • DOCX • PNG • JPG • JPEG (Tối đa 20MB)</p>
+                </div>
+
+                <div>
+                    <span class="text-xs font-bold text-slate-700 block mb-2">Tài liệu đã chọn</span>
+                    <div id="selectedFile" class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-xs text-slate-600 flex items-center justify-between">
+                        <div class="flex items-center space-x-2 truncate">
+                            <i class="fa-solid fa-file text-slate-400"></i>
+                            <span id="fileName">Chưa có tài liệu được chọn</span>
+                            <span id="fileSize" class="text-[10px] text-slate-400 ml-1"></span>
+                        </div>
+                        <button type="button" id="removeFile" class="text-red-500 hover:text-red-700 text-xs ml-2 cursor-pointer">Xóa</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Khối 3: Tiến trình xử lý AI -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm space-y-4">
+            <div class="flex items-center space-x-2 text-blue-600 font-bold text-sm border-b pb-3">
+                <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs">3</span>
+                <span>AI sẽ xử lý tài liệu theo quy trình</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-3 text-center text-xs">
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg flex flex-col items-center space-y-1">
+                    <i class="fa-solid fa-file-arrow-down text-blue-600 text-base mb-1"></i>
+                    <span class="font-bold text-slate-800">01. Document Understanding</span>
+                    <span class="text-[11px] text-slate-500">Đọc và hiểu cấu trúc tài liệu.</span>
+                </div>
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg flex flex-col items-center space-y-1">
+                    <i class="fa-solid fa-list-ul text-blue-600 text-base mb-1"></i>
+                    <span class="font-bold text-slate-800">02. Trích xuất nội dung</span>
+                    <span class="text-[11px] text-slate-500">Lấy thông tin quan trọng.</span>
+                </div>
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg flex flex-col items-center space-y-1">
+                    <i class="fa-solid fa-link text-blue-600 text-base mb-1"></i>
+                    <span class="font-bold text-slate-800">03. Xác định nguồn & vị trí</span>
+                    <span class="text-[11px] text-slate-500">Gắn nguồn tham chiếu.</span>
+                </div>
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg flex flex-col items-center space-y-1">
+                    <i class="fa-solid fa-diagram-project text-blue-600 text-base mb-1"></i>
+                    <span class="font-bold text-slate-800">04. Xây dựng Knowledge Graph</span>
+                    <span class="text-[11px] text-slate-500">Tạo mối liên hệ thực thể.</span>
+                </div>
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg flex flex-col items-center space-y-1">
+                    <i class="fa-solid fa-robot text-blue-600 text-base mb-1"></i>
+                    <span class="font-bold text-slate-800">05. Chuẩn bị cho AI Agent</span>
+                    <span class="text-[11px] text-slate-500">Sẵn sàng trả lời phân tích.</span>
+                </div>
+            </div>
+
+            <div class="pt-2 text-center">
+                <button type="button" id="startAnalysis" class="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-3 rounded-xl shadow-md transition text-sm inline-flex items-center space-x-2 cursor-pointer">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span>Bắt đầu phân tích</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Overlay khi chạy phân tích -->
+    <div id="analysisOverlay" class="fixed inset-0 bg-slate-900/50 backdrop-blur-xs hidden items-center justify-center z-50">
+        <div class="bg-white p-6 rounded-2xl shadow-xl max-w-md w-full mx-4 text-center space-y-4">
+            <div class="w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto text-xl animate-spin">
+                <i class="fa-solid fa-spinner"></i>
+            </div>
+            <h3 class="font-bold text-slate-800 text-base">Đang xử lý phân tích...</h3>
+            <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                <div id="progressBar" class="bg-red-600 h-full w-0 transition-all duration-300"></div>
+            </div>
+            <p id="analysisText" class="text-xs text-slate-500">Đang khởi tạo...</p>
+        </div>
+    </div>
+
+    <!-- Script tương tác đầy đủ -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // 1. Xử lý chọn loại yêu cầu
+            const typeButtons = document.querySelectorAll(".type-button");
+            typeButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    typeButtons.forEach(item => {
+                        item.classList.remove("active", "border-blue-600", "bg-blue-50/50");
+                        item.classList.add("border-slate-200");
+                        const icon = item.querySelector("i");
+                        if (icon) {
+                            icon.classList.remove("text-blue-600");
+                            icon.classList.add("text-slate-500");
+                        }
+                    });
+
+                    this.classList.add("active", "border-blue-600", "bg-blue-50/50");
+                    this.classList.remove("border-slate-200");
+                    
+                    const currentIcon = this.querySelector("i");
+                    if (currentIcon) {
+                        currentIcon.classList.remove("text-slate-500");
+                        currentIcon.classList.add("text-blue-600");
+                    }
+                });
+            });
+
+            // 2. Đếm ký tự
+            const requestContent = document.getElementById("requestContent");
+            const charCount = document.getElementById("charCount");
+            if (requestContent && charCount) {
+                requestContent.addEventListener("input", function () {
+                    charCount.textContent = this.value.length;
+                });
+            }
+
+            // 3. Xử lý file
+            const fileInput = document.getElementById("fileInput");
+            const chooseFileButton = document.getElementById("chooseFileButton");
+            const dropZone = document.getElementById("dropZone");
+            const fileName = document.getElementById("fileName");
+            const fileSize = document.getElementById("fileSize");
+            const removeFile = document.getElementById("removeFile");
+
+            if (chooseFileButton && fileInput) {
+                chooseFileButton.addEventListener("click", (e) => { e.stopPropagation(); fileInput.click(); });
+            }
+            if (dropZone && fileInput) {
+                dropZone.addEventListener("click", () => fileInput.click());
+                fileInput.addEventListener("change", function () {
+                    if (this.files.length > 0) handleFile(this.files[0]);
+                });
+            }
+
+            function handleFile(file) {
+                if (file.size > 20 * 1024 * 1024) {
+                    alert("Tệp quá lớn. Tối đa 20MB.");
+                    return;
+                }
+                if (fileName) fileName.textContent = file.name;
+                if (fileSize) fileSize.textContent = (file.size / (1024*1024)).toFixed(2) + " MB";
+            }
+
+            if (removeFile && fileInput) {
+                removeFile.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    fileInput.value = "";
+                    if (fileName) fileName.textContent = "Chưa có tài liệu được chọn";
+                    if (fileSize) fileSize.textContent = "";
+                });
+            }
+
+            // 4. Bắt đầu phân tích và chuyển trang
+            const startAnalysis = document.getElementById("startAnalysis");
+            const analysisOverlay = document.getElementById("analysisOverlay");
+            const progressBar = document.getElementById("progressBar");
+            const analysisText = document.getElementById("analysisText");
+            const documentTitle = document.getElementById("documentTitle");
+
+            if (startAnalysis) {
+                startAnalysis.addEventListener("click", function () {
+                    const titleVal = documentTitle ? documentTitle.value.trim() : "";
+                    const contentVal = requestContent ? requestContent.value.trim() : "";
+
+                    if (!titleVal) {
+                        alert("Vui lòng nhập tiêu đề tài liệu / báo cáo.");
+                        if (documentTitle) documentTitle.focus();
+                        return;
+                    }
+                    if (!contentVal) {
+                        alert("Vui lòng nhập nội dung mô tả yêu cầu.");
+                        if (requestContent) requestContent.focus();
+                        return;
+                    }
+
+                    if (analysisOverlay) {
+                        analysisOverlay.classList.remove("hidden");
+                        analysisOverlay.classList.add("flex");
+                    }
+
+                    let percent = 0;
+                    const interval = setInterval(() => {
+                        percent += 25;
+                        if (progressBar) progressBar.style.width = percent + "%";
+                        if (percent >= 100) {
+                            clearInterval(interval);
+                            const fileVal = fileInput && fileInput.files[0] ? fileInput.files[0].name : (titleVal + ".pdf");
+                            localStorage.setItem('denso_ai_data', JSON.stringify({
+                                title: titleVal,
+                                text: contentVal,
+                                fileName: fileVal
+                            }));
+                            setTimeout(() => {
+                                window.location.href = 'page2.html';
+                            }, 500);
+                        }
+                    }, 400);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
